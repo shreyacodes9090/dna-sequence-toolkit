@@ -46,10 +46,3 @@ def translate (rna_sequence):
             protein += amino_acid + " "
     return protein
 
-print(translate("AUGUUUAA"))
-
-#TEST BLOCK
-test_seq= "ATTGCA"
-print(gc_content(test_seq))
-print(transcribe(test_seq))
-print(translate(transcribe(test_seq)))

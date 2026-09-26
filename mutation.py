@@ -11,6 +11,4 @@ def compare_sequences(seq1, seq2):
     similarity=(match_count/total_positions) * 100
 
     return mutations , similarity
-result_mutations, result_similarity= compare_sequences("ATGC", "ATCC")
-print(result_mutations)
-print(result_similarity)
+

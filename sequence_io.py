@@ -27,21 +27,3 @@ def read_fasta(file_path):         #reads a fasta file sequence
     return combined_sequence
    
 
-
-choice= input("type 1 for manual entry , 2 to read a fasta file:")    #taking sequence manually or fasta file
-
-if choice=="1":
-    result=get_sequence()
-elif choice=="2":
-    filename= input("Enter the FASTA filename:")
-    result=read_fasta(filename)
-result= result.upper()
-
-if check_sequence(result):
-    print("the sequence is valid.")
-else:
-    print("the sequence is invalid.")
-
-
-print(read_fasta("doesnotexist.fasta"))
-print(check_sequence(""))    
