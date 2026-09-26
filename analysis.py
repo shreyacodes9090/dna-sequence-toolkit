@@ -41,11 +41,12 @@ def translate (rna_sequence):
     protein=""
     for i in range(0,len(rna_sequence), 3):
         codon= rna_sequence[i:i+3]
-        amino_acid=codon_table[codon]
-        protein += amino_acid + " "
+        if len(codon) == 3:
+            amino_acid=codon_table[codon]
+            protein += amino_acid + " "
     return protein
 
-
+print(translate("AUGUUUAA"))
 
 #TEST BLOCK
 test_seq= "ATTGCA"
