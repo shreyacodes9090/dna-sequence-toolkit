@@ -23,7 +23,7 @@ if choice =="1":
 
     logging.info(f"sequence entered: {sequence}")   
     logging.info("sequence validated and analyzed")    
-
+    
     if check_sequence(sequence):
         print("the sequence is valid")
         print("GC content:" , gc_content(sequence), "%")
